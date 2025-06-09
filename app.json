@@ -1,7 +1,56 @@
 {
   "expo": {
-    "name": "vision-camera-test",
-    "slug": "vision-camera-test",
-    "version": "1.0.0"
+    "name": "Vision Camera Object Detection",
+    "slug": "react-native-vision-detector",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "$(PRODUCT_NAME) needs access to your Camera to perform real-time object detection.",
+        "NSMicrophoneUsageDescription": "$(PRODUCT_NAME) needs access to your Microphone for video recording."
+      },
+      "bundleIdentifier": "com.lawinko.visioncameratest",
+      "appleTeamId": "N64M2H8CZA"
+    },
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.lawinko.visioncameratest"
+    },
+    "plugins": [
+      [
+        "react-native-vision-camera",
+        {
+          "cameraPermissionText": "$(PRODUCT_NAME) needs access to your Camera to perform real-time object detection.",
+          "enableMicrophonePermission": true,
+          "microphonePermissionText": "$(PRODUCT_NAME) needs access to your Microphone for video recording.",
+          "enableFrameProcessors": true
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 26
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ],
+      [
+        "react-native-fast-tflite",
+        {
+          "enableCoreMLDelegate": true
+        }
+      ]
+    ]
   }
 }
