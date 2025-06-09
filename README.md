@@ -1,4 +1,6 @@
-![App Logo](logo.png)
+<div align="center">
+<img src="logo.png" alt="React Native Object Detection Logo" width="150" height="150" />
+</div>
 
 # React Native Object Detection App
 
