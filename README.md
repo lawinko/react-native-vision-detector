@@ -1,3 +1,5 @@
+![App Logo](logo.png)
+
 # React Native Object Detection App
 
 A real-time object detection app built with React Native using VisionCamera and TensorFlow Lite. Detect 80+ objects in real-time with bounding boxes and confidence scores.

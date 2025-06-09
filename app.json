@@ -9,6 +9,7 @@
       "**/*"
     ],
     "ios": {
+      "icon": "./assets/icon.png",
       "supportsTablet": true,
       "infoPlist": {
         "NSCameraUsageDescription": "$(PRODUCT_NAME) needs access to your Camera to perform real-time object detection.",
@@ -18,6 +19,7 @@
       "appleTeamId": "N64M2H8CZA"
     },
     "android": {
+      "icon": "./assets/icon.png",
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO"
